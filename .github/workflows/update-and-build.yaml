@@ -40,7 +40,7 @@ jobs:
         extraPullNames: nix-community
         cachixArgs: --compression-method xz --compression-level 9 --jobs 4
     - name: 'Flake: update'
-      run: 'nix flake update --accept-flake-config --commit-lock-file'
+      run: 'nix flake update --accept-flake-config'
     - name: 'Deps: refresh'
       run: 'nix develop --accept-flake-config --command uvlock'
     - name: 'Pkg: build'
@@ -51,3 +51,4 @@ jobs:
         add: '.'
         push: true
         message: "[CI] Auto-commit changes"
+        default_author: github_actions

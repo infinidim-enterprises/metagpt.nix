@@ -1,4 +1,4 @@
-#+html: <a href="https://github.com/infinidim-enterprises/metagpt.nix/actions/workflows/update-and-build.yaml"><img src="https://img.shields.io/github/actions/workflow/status/infinidim-enterprises/metagpt.nix/update-and-build.yaml?event=push&logo=nixos&logoColor=white&label=devshell"/></a>&nbsp;
+#+html: <a href="https://github.com/infinidim-enterprises/metagpt.nix/actions/workflows/update-and-build.yaml"><img src="https://img.shields.io/github/actions/workflow/status/infinidim-enterprises/metagpt.nix/update-and-build.yaml?event=push&logo=nixos&logoColor=white&label=build"/></a>&nbsp;
 #+html: <a href="https://github.com/infinidim-enterprises/metagpt.nix/issues"><img src="https://img.shields.io/github/issues/infinidim-enterprises/metagpt.nix"></a>&nbsp;
 #+title: MetaGPT nix flake
 
