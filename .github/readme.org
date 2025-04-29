@@ -1,0 +1,11 @@
+#+html: <a href="https://github.com/infinidim-enterprises/metagpt.nix/actions/workflows/update-and-build.yaml"><img src="https://img.shields.io/github/actions/workflow/status/infinidim-enterprises/metagpt.nix/update-and-build.yaml?event=push&logo=nixos&logoColor=white&label=devshell"/></a>&nbsp;
+#+html: <a href="https://github.com/infinidim-enterprises/metagpt.nix/issues"><img src="https://img.shields.io/github/issues/infinidim-enterprises/metagpt.nix"></a>&nbsp;
+#+title: MetaGPT nix flake
+
+* Description
+This repository generates a nix package for [[https://github.com/geekan/MetaGPT][metaGPT]] every 12 hours
+
+** steps
+- nix flake update
+- nix develop --command 'uvlock'
+- nix build .#metagpt
