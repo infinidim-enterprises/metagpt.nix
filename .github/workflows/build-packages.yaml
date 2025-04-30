@@ -1,0 +1,59 @@
+name: metaGPT [ aarch64-linux / x86_64-linux ]
+
+on:
+  workflow_dispatch: null
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build_packages:
+    strategy:
+      matrix:
+        include:
+        - arch: x86_64-linux
+          runs-on: ubuntu-22.04
+        - arch: aarch64-linux
+          runs-on: ubuntu-22.04-arm
+    runs-on: ${{ matrix.runs-on }}
+    steps:
+    - name: ⬆ Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: ✓ Install Nix
+      uses: cachix/install-nix-action@v31
+      with:
+        nix_path: nixpkgs=channel:nixos-24.11
+        extra_nix_config: |
+          access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+          experimental-features = nix-command flakes
+          system-features = nixos-test benchmark big-parallel recursive-nix
+          download-buffer-size = 10485760
+          accept-flake-config = true
+    - name: ✓ Install cachix action
+      uses: cachix/cachix-action@v16
+      with:
+        name: njk
+        authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+        signingKey: ${{ secrets.CACHIX_SIGNING_KEY }}
+        extraPullNames: nix-community
+        cachixArgs: --compression-method xz --compression-level 9 --jobs 4
+    - name: 'Pkg: build'
+      run: 'nix build --accept-flake-config .#metagpt'
+
+  merge_pr:
+    name: Merge Pull Request
+    needs: build_packages
+    runs-on: ubuntu-22.04
+    if: needs.build_packages.result == 'success'
+    steps:
+      - name: Merge pull request
+        uses: juliangruber/merge-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ github.event.pull_request.number }}
+          method: merge

@@ -1,21 +1,16 @@
 name: metaGPT [ aarch64-linux / x86_64-linux ]
 on:
-  push: null
   workflow_dispatch: null
   schedule:
   - cron: 0 */12 * * *
+
 permissions:
   contents: write
+  pull-requests: write
+
 jobs:
-  build_packages:
-    strategy:
-      matrix:
-        include:
-        - arch: x86_64-linux
-          runs-on: ubuntu-22.04
-        - arch: aarch64-linux
-          runs-on: ubuntu-22.04-arm
-    runs-on: ${{ matrix.runs-on }}
+  update_flake:
+    runs-on: ubuntu-22.04
     steps:
     - name: ⬆ Checkout
       uses: actions/checkout@v4
@@ -31,24 +26,17 @@ jobs:
           system-features = nixos-test benchmark big-parallel recursive-nix
           download-buffer-size = 10485760
           accept-flake-config = true
-    - name: ✓ Install cachix action
-      uses: cachix/cachix-action@v16
-      with:
-        name: njk
-        authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
-        signingKey: ${{ secrets.CACHIX_SIGNING_KEY }}
-        extraPullNames: nix-community
-        cachixArgs: --compression-method xz --compression-level 9 --jobs 4
     - name: 'Flake: update'
       run: 'nix flake update --accept-flake-config'
     - name: 'Deps: refresh'
       run: 'nix develop --accept-flake-config --command uvlock'
-    - name: 'Pkg: build'
-      run: 'nix build --accept-flake-config .#metagpt'
-    - name: Commit changes
-      uses: EndBug/add-and-commit@v9
+    - name: 'Create PR'
+      uses: peter-evans/create-pull-request@v7
       with:
-        add: '.'
-        push: true
-        message: "[CI] Auto-commit changes"
-        default_author: github_actions
+        title: "Auto-update artifacts"
+        body: |
+          This PR was created automatically by GitHub Actions.
+        branch: "auto-update-artifacts"
+        sign-commits: true
+        delete-branch: true
+        base: master
