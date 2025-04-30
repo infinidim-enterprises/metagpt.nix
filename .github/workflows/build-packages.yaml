@@ -1,4 +1,4 @@
-name: metaGPT [ aarch64-linux / x86_64-linux ]
+name: 'metaGPT: build packages'
 
 on:
   workflow_dispatch: null

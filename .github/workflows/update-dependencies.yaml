@@ -1,4 +1,4 @@
-name: metaGPT [ aarch64-linux / x86_64-linux ]
+name: 'metaGPT: update flake'
 on:
   workflow_dispatch: null
   schedule:
