@@ -1,6 +1,9 @@
 name: 'metaGPT: build packages'
 
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch: null
   pull_request:
     types: [opened, synchronize, reopened]
@@ -49,7 +52,7 @@ jobs:
     name: Merge Pull Request
     needs: build_packages
     runs-on: ubuntu-22.04
-    if: needs.build_packages.result == 'success'
+    if: github.event_name == 'pull_request' && needs.build_packages.result == 'success'
     steps:
       - name: Merge pull request
         uses: juliangruber/merge-pull-request-action@v1
