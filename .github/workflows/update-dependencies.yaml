@@ -37,6 +37,7 @@ jobs:
         body: |
           This PR was created automatically by GitHub Actions.
         branch: "auto-update-artifacts"
+        token: ${{ secrets.PAT  }}
         sign-commits: true
         delete-branch: true
         base: master
