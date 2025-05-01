@@ -1,5 +1,6 @@
-{ config, lib, pkgs, ... }:
+self: { config, lib, pkgs, ... }:
 let
+  inherit (pkgs.stdenv.hostPlatform) system;
   inherit (lib // builtins)
     mkIf
     mkMerge
@@ -10,12 +11,12 @@ let
 
   cfg = config.programs.metagpt;
   yaml = pkgs.formats.yaml { };
-
+  flakePkgs = self.packages.${system};
 in
 {
   options.programs.metagpt = {
     enable = mkEnableOption "Enable metagpt";
-    package = mkPackageOption pkgs "metagpt" { };
+    package = mkPackageOption flakePkgs "default" { };
     settings = mkOption {
       type = yaml.type;
       default = { };
