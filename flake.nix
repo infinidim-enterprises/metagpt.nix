@@ -60,6 +60,9 @@
           project.name = "metagpt";
           project.version = "0.0.1"; # metagpt.shortRev;
           project.description = "The Multi-Agent Framework";
+          project.readme = ''
+            The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming
+          '';
           project.requires-python = "~=3.11.0";
           # project.dynamic = [
           #   "readme"
@@ -98,6 +101,112 @@
           cp ${self}/pyproject.toml "$out/"
           cp ${self}/uv.lock "$out/"
         '';
+
+        metagptPackage =
+          { buildPythonPackage
+          , python311Packages
+          , pythonAtLeast
+          , pythonOlder
+          }:
+
+          buildPythonPackage {
+            src = metagptSrc; # metagpt.outPath;
+            name = "metagpt";
+            version = "git-${metagpt.shortRev}";
+
+            # Use Python 3.11 explicitly
+            python = python311;
+            pythonPackages = python311Packages;
+
+            disabled = !(pythonAtLeast "3.9" && pythonOlder "3.12");
+
+            # Add build-time tools if needed
+            nativeBuildInputs = [ python311Packages.pip ];
+
+            # Expose Python dependencies from requirements.txt
+            propagatedBuildInputs = with python311Packages; [
+              aiohttp
+              channels
+              faiss
+              fire
+              typer
+              lancedb
+              loguru
+              meilisearch
+              numpy
+              openai
+              openpyxl
+              beautifulsoup4
+              pandas
+              pydantic
+              python-docx
+              pyyaml
+              setuptools
+              tenacity
+              tiktoken
+              tqdm
+              anthropic
+              typing-inspect
+              libcst
+              qdrant-client
+              grpcio
+              grpcio-tools
+              grpcio-status
+              # ta
+              # zhipuai
+              # semantic-kernel
+              # tree-sitter
+              # tree-sitter-python
+
+              wrapt
+              redis
+              curl-cffi
+              httplib2
+              websocket-client
+              aiofiles
+              gitpython
+              rich
+              nbclient
+              nbformat
+              ipython
+              ipykernel
+              scikit-learn
+              typing-extensions
+              socksio
+              gitignore-parser
+              websockets
+              networkx
+              google-generativeai
+              playwright
+              anytree
+              ipywidgets
+              pillow
+              imap-tools
+              pylint
+              pygithub
+              htmlmin
+              fsspec
+              grep-ast
+              unidiff
+              qianfan
+              dashscope
+              rank-bm25
+              jieba
+              gymnasium
+              boto3
+              spark-ai-python
+              httpx
+            ];
+
+            # Optional: disable building on non-Linux
+            # meta = with lib; {
+            #   description = "MetaGPT: multi-agent framework for natural language programming";
+            #   homepage = "https://github.com/FoundationAgents/MetaGPT";
+            #   license = licenses.mit;
+            #   platforms = stdenv.lib.platforms.linux;
+            # };
+          };
+
 
         metagptPythonPackage = pkgs.python311Packages.callPackage
           ({ buildPythonPackage
@@ -159,8 +268,8 @@
         metagptEnv = pythonSet.mkVirtualEnv "metagpt-env" workspace.deps.default;
       in
       {
-        # inherit metagptPythonPackage;
 
+        packages.tested = pkgs.python311Packages.callPackage metagptPackage { };
         packages.default = self.packages.${system}.metagpt;
         packages.metagpt = pkgs.stdenv.mkDerivation {
           name = "metagpt-git-${metagpt.shortRev}";
@@ -196,7 +305,9 @@
       hydraJobs = self.packages;
       overlays.default = final: prev: {
         inherit (self.packages.${final.system}) metagpt;
+        # metagptPkg = prev.python311Packages.callPackage metagptPackage { };
       };
       homeManagerModules.default = import ./nix/hm-module.nix self;
     };
+
 }
