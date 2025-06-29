@@ -39,11 +39,11 @@
     "metagpt": {
       "flake": false,
       "locked": {
-        "lastModified": 1749824125,
-        "narHash": "sha256-3SuDd4yyr2Eq75Gt71rqdJF6ZmY4vyoJP9AVox2hL4Q=",
+        "lastModified": 1751165702,
+        "narHash": "sha256-0P2VK8CDNz8BG5POwivK5/av/lAVQrZ7lzWEU25mDDM=",
         "owner": "geekan",
         "repo": "MetaGPT",
-        "rev": "a855e66d041e0e0011e8b71a166c9abdca7c18c1",
+        "rev": "2f0c7fb14f9c0ba44c62c2c1df2ef57bcd0c75a6",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1751125036,
-        "narHash": "sha256-e0SC5qMG1bj0Sm+2/rRFHRDM6aoRmFIhMrwpQKHmA3c=",
+        "lastModified": 1751196503,
+        "narHash": "sha256-xf/F9uEuSAUSjdQyZfV/dj1H2/Sl5v/vc6k7NwKnxCs=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "92f27305bedaa335cca6da8d183c67b16c26752e",
+        "rev": "127a510883bfdf6cc21958139603a0cc3c92beed",
         "type": "github"
       },
       "original": {
