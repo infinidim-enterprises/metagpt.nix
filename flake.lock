@@ -178,11 +178,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1750499893,
-        "narHash": "sha256-ThKBd8XSvITAh2JqU7enOp8AfKeQgf9u7zYC41cnBE4=",
+        "lastModified": 1751417708,
+        "narHash": "sha256-cLeN0sliKiqHdXoFb0ZWlGnAiVf4kZeBqnjXDKzDjkw=",
         "owner": "pyproject-nix",
         "repo": "pyproject.nix",
-        "rev": "e824458bd917b44bf4c38795dea2650336b2f55d",
+        "rev": "79f947627e7c356489ec602f3ce92e87a831f411",
         "type": "github"
       },
       "original": {
