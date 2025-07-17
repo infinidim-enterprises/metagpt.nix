@@ -3119,7 +3119,7 @@ wheels = [
 
 [[package]]
 name = "zhipuai"
-version = "2.1.5.20250715"
+version = "2.1.5.20250716"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cachetools" },
@@ -3128,7 +3128,7 @@ dependencies = [
     { name = "pydantic-core" },
     { name = "pyjwt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/46/1b/71aa9869ded210800351fc6307bc80ad490f6b80c10f284ffd5908f45a85/zhipuai-2.1.5.20250715.tar.gz", hash = "sha256:245f6db92bf1da4f60a34c0d572373214e61f48148ebe543a542cc0155d3bf9c", size = 68641 }
+sdist = { url = "https://files.pythonhosted.org/packages/61/f2/694fc84029c40dc545d9f5bda8a949e9601867bc1a410263f20ae25da9b9/zhipuai-2.1.5.20250716.tar.gz", hash = "sha256:901d736c163fba2d39baa208433495b247320d8e1c8d00ab8b58eaa90bd46297", size = 68835 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c0/a9/49f4f546d103100e09f89767070ed40ad11ce3ac974498eb20df40df2680/zhipuai-2.1.5.20250715-py3-none-any.whl", hash = "sha256:9ee6a2906734e0135a616a92d3c75a97967c9c90d66b161d6c50e4230096d275", size = 115610 },
+    { url = "https://files.pythonhosted.org/packages/69/45/b9c5e8e235b17ba73126e74bb32c3c9e92c6a25bdf230cf58f2a687c9906/zhipuai-2.1.5.20250716-py3-none-any.whl", hash = "sha256:6728a4c612adb23be46304dc76a3bd1e3546d174dcb75cc2b4f4cf6adc2c5ce3", size = 116141 },
 ]
