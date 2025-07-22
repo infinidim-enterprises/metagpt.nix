@@ -170,16 +170,16 @@ wheels = [
 
 [[package]]
 name = "bce-python-sdk"
-version = "0.9.39"
+version = "0.9.41"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "future" },
     { name = "pycryptodome" },
     { name = "six" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/98/2d/b45a15a104d34c0f66427dc8f3f39be8c32077db636ad01ccd882ededd28/bce_python_sdk-0.9.39.tar.gz", hash = "sha256:2ba069e1ddcea2d4ff0cb2b3ed38924b1378af82dc1b489d94b537b93a150f8a", size = 251888 }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/d7/56827359fd1dbddd19ea64132e73d923c231135b835d78a74a96c6274e5e/bce_python_sdk-0.9.41.tar.gz", hash = "sha256:46fd0b01832fc2af68326e8d3835012a9c22b14d90b5d5764b4c61222b07bfc9", size = 252413 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/df/82/6006332f28e314c6b6eb4ae6921040fa051c0a1d95ef70cb55322fcfe044/bce_python_sdk-0.9.39-py3-none-any.whl", hash = "sha256:d62cbdec0f926593de548712b3a3e052ce5ea531dd690a1b0abb9a0262650400", size = 351133 },
+    { url = "https://files.pythonhosted.org/packages/3a/0e/28508db8053d13da6e187c6dc5919752e1be1e30e0dbdbe23d3da867546c/bce_python_sdk-0.9.41-py3-none-any.whl", hash = "sha256:b2067b9f0d9d58fd07da5bc5482c78a89084617eaba17f11057709d77a10c385", size = 351621 },
 ]
 
 [[package]]
