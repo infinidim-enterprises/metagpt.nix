@@ -269,11 +269,11 @@
         "pyproject-nix": "pyproject-nix_3"
       },
       "locked": {
-        "lastModified": 1755887980,
-        "narHash": "sha256-MD1IhwuoDXQSYcQ/JfEpMxrk6pPl+aHPXSqZLOXLHks=",
+        "lastModified": 1755997346,
+        "narHash": "sha256-sVDOzFtruuSAq3ySQMy1Ffrnm4hZDYwQDo4rKDcqy1g=",
         "owner": "pyproject-nix",
         "repo": "uv2nix",
-        "rev": "76778b5f457e416688324d19d8f02ec5e22cbe0c",
+        "rev": "7c4c24e17eb866ab99a25784b9bb23f59366329f",
         "type": "github"
       },
       "original": {
