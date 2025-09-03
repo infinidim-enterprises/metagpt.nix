@@ -16,7 +16,7 @@ dependencies = [
     "dashscope~=1.19.3",
     "faiss-cpu==1.7.4",
     "fire==0.4.0",
-    "fsspec>=2025.7.0",
+    "fsspec>=2025.9.0",
     "gitignore-parser==0.1.9",
     "gitpython==3.1.40",
     "google-generativeai==0.4.1",
