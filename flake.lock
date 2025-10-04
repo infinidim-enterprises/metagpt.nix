@@ -39,11 +39,11 @@
     "metagpt": {
       "flake": false,
       "locked": {
-        "lastModified": 1751283955,
-        "narHash": "sha256-ViQsSNohOlPWhMXA28du0X0KqcvkFuL1lx9VCzXxyj4=",
+        "lastModified": 1759557477,
+        "narHash": "sha256-elbI6ftAZGIbIvMsZV/IwdsJ0FsqPu0FsGWmzJNOuA0=",
         "owner": "geekan",
         "repo": "MetaGPT",
-        "rev": "1dfce070d29041fbd10dc9deb4a2db48bd5aebc7",
+        "rev": "fc6e8433747be02826dec818627ed5cec0950e77",
         "type": "github"
       },
       "original": {
