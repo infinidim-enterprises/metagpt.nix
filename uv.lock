@@ -170,16 +170,16 @@ wheels = [
 
 [[package]]
 name = "bce-python-sdk"
-version = "0.9.50"
+version = "0.9.52"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "future" },
     { name = "pycryptodome" },
     { name = "six" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/33/8a/f0449d4cdae76b27bf8df285d3628f4014ae4f8f7a3de2978940573f4d1f/bce_python_sdk-0.9.50.tar.gz", hash = "sha256:23c24dd704ff575fb45c3d7f0c9397e42a2513f9abcfb259a0bd1483f6b87741", size = 255160 }
+sdist = { url = "https://files.pythonhosted.org/packages/83/0a/e49d7774ce186fd51c611a2533baff8e7db0d22baef12223773f389b06b1/bce_python_sdk-0.9.52.tar.gz", hash = "sha256:dd54213ac25b8b1260fb45f1fbc0f2b1c53bb0f9f594258ca0479f1fc85f7405", size = 275614 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ea/b9/3ebf241acf870d56097264ffbd53a68f05dd64637d2c51d629cc9b6d4331/bce_python_sdk-0.9.50-py3-none-any.whl", hash = "sha256:2cb8fc9fdd9e13fb2cc82fc18d369e382c2c7d4dda3e75b52b8a8788e2178d95", size = 354110 },
+    { url = "https://files.pythonhosted.org/packages/a3/d0/f57f75c96e8bb72144845f7208f712a54454f1d063d5ef02f1e9ea476b79/bce_python_sdk-0.9.52-py3-none-any.whl", hash = "sha256:f1ed39aa61c2d4a002cd2345e01dd92ac55c75960440d76163ead419b3b550e7", size = 390401 },
 ]
 
 [[package]]
@@ -247,11 +247,11 @@ pydantic = [
 
 [[package]]
 name = "certifi"
-version = "2025.10.5"
+version = "2025.11.12"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/4c/5b/b6ce21586237c77ce67d01dc5507039d444b630dd76611bbca2d8e5dcd91/certifi-2025.10.5.tar.gz", hash = "sha256:47c09d31ccf2acf0be3f701ea53595ee7e0b8fa08801c6624be771df09ae7b43", size = 164519 }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/8c/58f469717fa48465e4a50c014a0400602d3c437d7c0c468e17ada824da3a/certifi-2025.11.12.tar.gz", hash = "sha256:d8ab5478f2ecd78af242878415affce761ca6bc54a22a27e026d7c25357c3316", size = 160538 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e4/37/af0d2ef3967ac0d6113837b44a4f0bfe1328c2b9763bd5b1744520e5cfed/certifi-2025.10.5-py3-none-any.whl", hash = "sha256:0f212c2744a9bb6de0c56639a6f68afe01ecd92d91f14ae897c4fe7bbeeef0de", size = 163286 },
+    { url = "https://files.pythonhosted.org/packages/70/7d/9bc192684cea499815ff478dfcdc13835ddf401365057044fb721ec6bddb/certifi-2025.11.12-py3-none-any.whl", hash = "sha256:97de8790030bbd5c2d96b7ec782fc2f7820ef8dba6db909ccf95449f2d062d4b", size = 159438 },
 ]
 
 [[package]]
