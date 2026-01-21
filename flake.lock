@@ -39,11 +39,11 @@
     "metagpt": {
       "flake": false,
       "locked": {
-        "lastModified": 1759557477,
-        "narHash": "sha256-elbI6ftAZGIbIvMsZV/IwdsJ0FsqPu0FsGWmzJNOuA0=",
+        "lastModified": 1768990352,
+        "narHash": "sha256-SUMtcOWrM3dry464pjhMwbnwT5mJoKsmHvlsskAv/RU=",
         "owner": "geekan",
         "repo": "MetaGPT",
-        "rev": "fc6e8433747be02826dec818627ed5cec0950e77",
+        "rev": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
         "type": "github"
       },
       "original": {
@@ -178,11 +178,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1764134915,
-        "narHash": "sha256-xaKvtPx6YAnA3HQVp5LwyYG1MaN4LLehpQI8xEdBvBY=",
+        "lastModified": 1768984832,
+        "narHash": "sha256-Q/5ICDALWlG+MbfLoghvXb3K9S0jqGt0mj8Y8RN+60k=",
         "owner": "pyproject-nix",
         "repo": "pyproject.nix",
-        "rev": "2c8df1383b32e5443c921f61224b198a2282a657",
+        "rev": "c372512cad744dbdeb65dba864376a0a5ab339a7",
         "type": "github"
       },
       "original": {
