@@ -232,11 +232,11 @@ wheels = [
 
 [[package]]
 name = "camel-converter"
-version = "5.0.0"
+version = "5.0.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a5/dd/f8df35e1d2b6360a27c1613937bde2f68db41b8a67cd856f105d2031a3ed/camel_converter-5.0.0.tar.gz", hash = "sha256:97d0cf15a75b40abab288c526c71143b468376dd61690fd1cb0a49d9e471f111", size = 58926 }
+sdist = { url = "https://files.pythonhosted.org/packages/a6/4d/e803ad784d2340942e80c43764a4e9ccebba69349fde46bf3f9a05e61cfe/camel_converter-5.0.1.tar.gz", hash = "sha256:3eff7c18f29d53eaed9eb02eb83383264b81c8fafa401f9ea2b132bfe5961b53", size = 70629 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/51/67/283543fc3ac6d6d8e9cd710e331ebf2323a284f66be304ac786c3b7bdeb4/camel_converter-5.0.0-py3-none-any.whl", hash = "sha256:5a64900bcba1ca047c504ee88cefa905a5bcac15cec06f6d6f9d1ebad46d4e80", size = 6254 },
+    { url = "https://files.pythonhosted.org/packages/fb/4f/313a38a88b91564030cdbfebb076d32c1087443335c766c10d399b14c855/camel_converter-5.0.1-py3-none-any.whl", hash = "sha256:93785a7dfc872e39396f9ccef08bd3ebd1dded62b5cafca9cd430f8791ee9f85", size = 6267 },
 ]
 
 [package.optional-dependencies]
@@ -292,11 +292,16 @@ wheels = [
 
 [[package]]
 name = "chardet"
-version = "6.0.0.post1"
+version = "7.0.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/7f/42/fb9436c103a881a377e34b9f58d77b5f503461c702ff654ebe86151bcfe9/chardet-6.0.0.post1.tar.gz", hash = "sha256:6b78048c3c97c7b2ed1fbad7a18f76f5a6547f7d34dbab536cc13887c9a92fa4", size = 12521798 }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/80/4684035f1a2a3096506bc377276a815ccf0be3c3316eab35d589e82d9f3c/chardet-7.0.1.tar.gz", hash = "sha256:6fce895c12c5495bb598e59ae3cd89306969b4464ec7b6dd609b9c86e3397fe3", size = 490240 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/66/42/5de54f632c2de53cd3415b3703383d5fff43a94cbc0567ef362515261a21/chardet-6.0.0.post1-py3-none-any.whl", hash = "sha256:c894a36800549adf7bb5f2af47033281b75fdfcd2aa0f0243be0ad22a52e2dcb", size = 627245 },
+    { url = "https://files.pythonhosted.org/packages/00/fb/a90b4510aa9080966c65321db2084bcfa184518ee1ed15570d351649ecb2/chardet-7.0.1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:c3f59dc3e148b54813ec5c7b4b2e025d37f5dc221ee28a06d1a62f169cfaedf5", size = 540100 },
+    { url = "https://files.pythonhosted.org/packages/24/fa/3ad0b454a55376b7971fe64c2f225dfe56a491d8d8728fbfba63f8ff416d/chardet-7.0.1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:3355a3c8453d673e7c1664fdd24a0c6ef39964c3d41befc4849250f7eb1de3b5", size = 533202 },
+    { url = "https://files.pythonhosted.org/packages/ad/53/a57a8a6be34379e55c8bdbf2b988c145d3b7675577bd152e73bff7c4ba3c/chardet-7.0.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:5333f9967863ea7d8642df0e00cf4d33e8ed7e99fe7b6464b40ba969a2808544", size = 552994 },
+    { url = "https://files.pythonhosted.org/packages/e4/9f/3d4ba1650e3eb3e7431a054e3bf1b5eaea25b84c72afabf5ef6fc33305d1/chardet-7.0.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:265cb3b5dafc0411c0949800a0692f07e986fb663b6ae1ecfba32ad193a55a03", size = 555605 },
+    { url = "https://files.pythonhosted.org/packages/73/64/9c5c450ba18359a8e8ab2943e6c3a0b100bd394799bc73a844e3c5cd9c7c/chardet-7.0.1-cp311-cp311-win_amd64.whl", hash = "sha256:26186f0ea03c4c1f9be20c088b127c71b0e9d487676930fab77625ddec2a4ef2", size = 524098 },
+    { url = "https://files.pythonhosted.org/packages/a3/1f/c1a089db6333b1283409cad3714b8935e7e56722c9c60f9299726a1e57c2/chardet-7.0.1-py3-none-any.whl", hash = "sha256:e51e1ff2c51b2d622d97c9737bd5ee9d9b9038f05b7dd8f9ea10b9e2d9674c24", size = 408292 },
 ]
 
 [[package]]
@@ -489,16 +494,16 @@ wheels = [
 
 [[package]]
 name = "django"
-version = "5.2.11"
+version = "5.2.12"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asgiref" },
     { name = "sqlparse" },
     { name = "tzdata", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/17/f2/3e57ef696b95067e05ae206171e47a8e53b9c84eec56198671ef9eaa51a6/django-5.2.11.tar.gz", hash = "sha256:7f2d292ad8b9ee35e405d965fbbad293758b858c34bbf7f3df551aeeac6f02d3", size = 10885017 }
+sdist = { url = "https://files.pythonhosted.org/packages/bd/55/b9445fc0695b03746f355c05b2eecc54c34e05198c686f4fc4406b722b52/django-5.2.12.tar.gz", hash = "sha256:6b809af7165c73eff5ce1c87fdae75d4da6520d6667f86401ecf55b681eb1eeb", size = 10860574 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/91/a7/2b112ab430575bf3135b8304ac372248500d99c352f777485f53fdb9537e/django-5.2.11-py3-none-any.whl", hash = "sha256:e7130df33ada9ab5e5e929bc19346a20fe383f5454acb2cc004508f242ee92c0", size = 8291375 },
+    { url = "https://files.pythonhosted.org/packages/4e/32/4b144e125678efccf5d5b61581de1c4088d6b0286e46096e3b8de0d556c8/django-5.2.12-py3-none-any.whl", hash = "sha256:4853482f395c3a151937f6991272540fcbf531464f254a347bf7c89f53c8cff7", size = 8310245 },
 ]
 
 [[package]]
