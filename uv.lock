@@ -169,7 +169,7 @@ wheels = [
 
 [[package]]
 name = "bce-python-sdk"
-version = "0.9.69"
+version = "0.9.70"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "crc32c" },
@@ -177,9 +177,9 @@ dependencies = [
     { name = "pycryptodome" },
     { name = "six" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/07/9c/8fdaf7f9259002b5aa9101bb88252f6d05f65c4535bbca567457da84d765/bce_python_sdk-0.9.69.tar.gz", hash = "sha256:2aaa9f4fc118b3efb720a66d7a541789b7d838a1ddacb9f3c6faa6b75e1c7d23", size = 300008 }
+sdist = { url = "https://files.pythonhosted.org/packages/f7/a9/7c21a9073eb9ad7e8cacf6f8a0e47c0d01ad7bf8fd8e0dc42164b117d60b/bce_python_sdk-0.9.70.tar.gz", hash = "sha256:3b37fd7448278dd33f745a6a23198a2cc2490fded9cb8d59b72500784853df4e", size = 299967 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ca/3b/41c2985d1b3b3bd5cdf103b4156b08320268ee7a0617f2a40c34fdd377e9/bce_python_sdk-0.9.69-py3-none-any.whl", hash = "sha256:50fb94833b5f4931255296396081b85143101bd9a7a894efbf20d1f759779de5", size = 415659 },
+    { url = "https://files.pythonhosted.org/packages/3c/2d/70fc866ff98d1f6bd75b0a4235694129b3c519b014254d7bcfc02ffe1bee/bce_python_sdk-0.9.70-py3-none-any.whl", hash = "sha256:fd1f31113e4a8dca314f040662b7caf07ec11cf896c5da232627a9a2c9d2e3a1", size = 415660 },
 ]
 
 [[package]]
@@ -2153,7 +2153,7 @@ wheels = [
 
 [[package]]
 name = "pygithub"
-version = "2.9.0"
+version = "2.9.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pyjwt", extra = ["crypto"] },
@@ -2162,9 +2162,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a6/9a/44f918e9be12e49cb8b053f09d5d0733b74df52bf4dabc570da1c3ecd9f6/pygithub-2.9.0.tar.gz", hash = "sha256:a26abda1222febba31238682634cad11d8b966137ed6cc3c5e445b29a11cb0a4", size = 2592289 }
+sdist = { url = "https://files.pythonhosted.org/packages/ab/c3/8465a311197e16cf5ab68789fe689535e90f6b61ab524cc32a39e67237ae/pygithub-2.9.1.tar.gz", hash = "sha256:59771d7ff63d54d427be2e7d0dad2208dfffc2b0a045fec959263787739b611c", size = 2594989 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2f/de/72e02bc7674e161b155a4b5a03b2347129d0626115bc97ba5bad5070cac9/pygithub-2.9.0-py3-none-any.whl", hash = "sha256:5e2b260ce327bffce9b00f447b65953ef7078ffe93e5a5425624a3075483927c", size = 449653 },
+    { url = "https://files.pythonhosted.org/packages/77/aa/81a5506f089a26338bff17535e4339b3b22049ebd1bcdeff756c4d7a7559/pygithub-2.9.1-py3-none-any.whl", hash = "sha256:2ec78fca30092d51a42d76f4ddb02131b6f0c666a35dfdf364cf302cdda115b9", size = 449710 },
 ]
 
 [[package]]
