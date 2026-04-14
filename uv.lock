@@ -293,17 +293,17 @@ wheels = [
 
 [[package]]
 name = "chardet"
-version = "7.4.2"
+version = "7.4.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/05/1d/0d102acd04cebb03377a3aa79f0c501db68bd0afbc1306e40cb208911319/chardet-7.4.2.tar.gz", hash = "sha256:f2a41ccf8bf8eb1768d741e80d09b902e8d0d8c94974597e07a5d7e6a122a0dc", size = 784024 }
+sdist = { url = "https://files.pythonhosted.org/packages/19/b6/9df434a8eeba2e6628c465a1dfa31034228ef79b26f76f46278f4ef7e49d/chardet-7.4.3.tar.gz", hash = "sha256:cc1d4eb92a4ec1c2df3b490836ffa46922e599d34ce0bb75cf41fd2bf6303d56", size = 784800 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7e/5a/522464b4db2c1506b3dafc5bc79aa8d9945c7205f7279a0b4c848273c583/chardet-7.4.2-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:ac5d06a7ba643a6349b39c9959de5f97ca0790c5c0cff8a7167e69568ebd3b64", size = 870805 },
-    { url = "https://files.pythonhosted.org/packages/94/96/5f0193da84a805723fa68aa231e3b3467037578320886f2aa3c2114338db/chardet-7.4.2-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:3099c9e5e8cfe858fbcc5597044f581bef8f118744ebaea037e33d9e90041e39", size = 852985 },
-    { url = "https://files.pythonhosted.org/packages/5d/d3/f13a04a9d558670c94c775e4ba3f04e7b6068f9f1956738e3a58afce7740/chardet-7.4.2-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:b367ebb9f5a2eb2700b457a9cfb1fa5be3177d2105f25bd4ad634c2b7fee098b", size = 873526 },
-    { url = "https://files.pythonhosted.org/packages/7a/d1/c81c94e4ad69a18acf8cb062a9020df1fe8ee585069743c1f7bc58bb8000/chardet-7.4.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:db39b500114d9665994f800946eaa3d8c9b5a41bdb59911a0ec6ff4ca45f7b05", size = 883352 },
-    { url = "https://files.pythonhosted.org/packages/b6/66/97b24adefcc41a8a853723fffafa8718088c247344fe7c0f546a5dce5ae3/chardet-7.4.2-cp311-cp311-manylinux_2_31_riscv64.manylinux_2_39_riscv64.whl", hash = "sha256:cefd74690e3b2bd1ad3ab0defb58081d8804a6f5291a29f8d672e5399924ce94", size = 876576 },
-    { url = "https://files.pythonhosted.org/packages/40/5d/c04277fd29ffbd82ff1adf62b63c338b010d27ac54f9c750de33b6969805/chardet-7.4.2-cp311-cp311-win_amd64.whl", hash = "sha256:b9f83d0906705725d3dcf1de5d886241f8666c2231f974a867012936c2c465cd", size = 941809 },
-    { url = "https://files.pythonhosted.org/packages/8c/81/7a0cb90b97de02038ef4882776fd643998fe9e78ba7d720c3b04bdaa0eaf/chardet-7.4.2-py3-none-any.whl", hash = "sha256:5ca09c5122c111df7edfbe6cd33b1dd96a30fd2874c812f8593ba446eaf9a1a3", size = 626555 },
+    { url = "https://files.pythonhosted.org/packages/19/52/505c207f334d51e937cbaa27ff95776e16e2d120e13cbe491cd7b3a70b50/chardet-7.4.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:25a862cddc6a9ac07023e808aedd297115345fbaabc2690479481ddc0f980e09", size = 870747 },
+    { url = "https://files.pythonhosted.org/packages/14/4b/d3c79495dee4831b8bebca2790e72cb90f0c5849c940570a7c7e5b70b952/chardet-7.4.3-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:7005c88da26fd95d8abb8acbe6281d833e9a9181b03cf49b4546c4555389bd97", size = 853210 },
+    { url = "https://files.pythonhosted.org/packages/b9/99/f6a822ad1bde25a4c38dc3e770485e78e0893dfd871cd6e18ed3ea3a795e/chardet-7.4.3-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:dc50f28bad067393cce0af9091052c3b8df7a23115afd8ba7b2e0947f0cef1f8", size = 873625 },
+    { url = "https://files.pythonhosted.org/packages/b1/10/31932775c94a86814f76b41c4a772b52abfb0e6125324f32c6da1196c297/chardet-7.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:4c3da294de1a681097848ab58bd3f2771a674f8039d2d87a5538b28856b815e9", size = 883436 },
+    { url = "https://files.pythonhosted.org/packages/6c/63/0f43e3acf2c436fdb32a0f904aeb03a2904d2126eed34a042a194d235926/chardet-7.4.3-cp311-cp311-manylinux_2_31_riscv64.manylinux_2_39_riscv64.whl", hash = "sha256:93c45e116dd51b66226a53ade3f9f635e870de5399b90e00ce45dcc311093bf4", size = 876589 },
+    { url = "https://files.pythonhosted.org/packages/5d/a6/e9b8f8a3e99602792b01fa7d0a731737615ab56d8bfd0b52935a0ef88b85/chardet-7.4.3-cp311-cp311-win_amd64.whl", hash = "sha256:ccc1f83ab4bcfb901cf39e0c4ba6bc6e726fc6264735f10e24ceb5cb47387578", size = 941866 },
+    { url = "https://files.pythonhosted.org/packages/8c/6c/0a40afdb50a0fe041ab95553b835a8160b6cf0e81edf2ae2fe9f5224cbf9/chardet-7.4.3-py3-none-any.whl", hash = "sha256:1173b74051570cf08099d7429d92e4882d375ad4217f92a6e5240ccfb26f231e", size = 626562 },
 ]
 
 [[package]]
